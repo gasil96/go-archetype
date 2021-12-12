@@ -7,6 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * TODO - Example for dtos clients
+ * TODO - This class must be removed if it is not going to be used in this microsservice, later delete this comment
+ * */
 @Data
 @Builder
 @NoArgsConstructor

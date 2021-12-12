@@ -6,9 +6,9 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 
-application-description: '@project.description@'
-application-title: '@project.name@'
-application-version: '@project.version@'
+application:
+  title: '@project.artifactId@'
+  version: '@project.version@'
 
 integrations:
   viacep:
