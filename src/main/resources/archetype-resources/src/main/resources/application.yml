@@ -1,1 +1,16 @@
+spring:
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
+application-description: '@project.description@'
+application-title: '@project.name@'
+application-version: '@project.version@'
+
+integrations:
+  viacep:
+    url: viacep.com.br
+    name: viacep
