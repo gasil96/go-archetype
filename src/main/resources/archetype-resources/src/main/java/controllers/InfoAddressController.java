@@ -16,21 +16,21 @@ import org.springframework.web.bind.annotation.RestController;
  * TODO - Example class for controller (ever use swagger annotations).
  * TODO - This class must be removed if it is not going to be used in this microsservice, later delete this comment
  * */
-@Tag(name = "Brazilian Zip Code", description = "Access to information based on the Brazilian zip code")
+@Tag(name = "Adresses", description = "Access to address information")
 @Slf4j
 @RestController
 @RequestMapping("/address/")
-public class BrazilianZipCodeController {
+public class InfoAddressController {
 
 	@Autowired
 	private InfoAddressService infoAddressService;
 
-	@Operation(summary = "getInfoAddress")
+	@Operation(summary = "getInfoAddress - Brazilian")
 	@GetMapping("/v1/info/{zipCode}")
-	public ResponseEntity<InfoAddressDTO> getInfoAddress(@PathVariable("zipCode") String zipCode) {
-		InfoAddressDTO result = infoAddressService.getInfoAddress(zipCode);
+	public ResponseEntity<InfoAddressDTO> getInfoAddressBrazilian(@PathVariable("zipCode") String zipCode) {
+		InfoAddressDTO result = infoAddressService.getInfoAddressBrazilian(zipCode);
 
-		log.debug("BrazilianZipCodeController.getInfoAddress(zipCode: {}) - output: {}", zipCode, result);
+		log.debug("InfoAddressController.getInfoAddress(zipCode: {}) - output: {}", zipCode, result);
 		return ResponseEntity.ok().body(result);
 	}
 

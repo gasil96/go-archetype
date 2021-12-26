@@ -8,6 +8,6 @@ import ${package}.dtos.InfoAddressDTO;
  * */
 public interface InfoAddressService {
 
-	InfoAddressDTO getInfoAddress(String zipCode);
+	InfoAddressDTO getInfoAddressBrazilian(String zipCode);
 
 }

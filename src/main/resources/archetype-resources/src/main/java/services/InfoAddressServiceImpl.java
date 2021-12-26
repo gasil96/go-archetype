@@ -23,9 +23,8 @@ public class InfoAddressServiceImpl implements InfoAddressService {
 	@Autowired
 	private BrazilianZipCodeClient brazilianZipCodeClient;
 
-	@Override
-	public InfoAddressDTO getInfoAddress(String zipCode) {
-		BrazilianZipCodeResponseDTO response = null;
+	public InfoAddressDTO getInfoAddressBrazilian(String zipCode) {
+		BrazilianZipCodeResponseDTO response;
 
 		try {
 			response = brazilianZipCodeClient.getInfos(zipCode);

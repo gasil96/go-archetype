@@ -17,7 +17,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class InfoAddressDTO implements Serializable {
 
-	private String cep;
+	private String zipCode;
 	private String address;
 	private String city;
 	private String state;

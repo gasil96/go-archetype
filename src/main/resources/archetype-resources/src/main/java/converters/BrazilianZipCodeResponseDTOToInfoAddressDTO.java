@@ -21,7 +21,7 @@ public class BrazilianZipCodeResponseDTOToInfoAddressDTO implements Converter<Br
 
 		target.setAddress(String.format(ApplicationConstants.ADDRESS_FULL_INFO, source.getLogradouro(),
 				StringUtils.isNotBlank(source.getComplemento()) ? source.getComplemento() : StringUtils.EMPTY));
-		target.setCep(source.getCep());
+		target.setZipCode(source.getCep());
 		target.setCity(source.getLocalidade());
 		target.setState(BrazilianUF.fromUf(source.getUf()).getState());
 
