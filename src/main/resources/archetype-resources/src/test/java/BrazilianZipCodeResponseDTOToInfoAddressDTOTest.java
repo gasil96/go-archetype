@@ -13,6 +13,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * TODO - Converter Test, later delete this comment.
+ * */
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class BrazilianZipCodeResponseDTOToInfoAddressDTOTest {
